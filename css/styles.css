@@ -173,5 +173,104 @@ summary {
 
 :root {
   font-size: 10px;
+  --primaryColor: rgba(63, 21, 79, 1);
+  --secondaryColor: rgba(228, 0, 43, 1);
+  --light: rgba(248, 248, 248,1);
+  --dark: rgba(80, 80, 80,1);
+  --dark-80: rgba(80, 80, 80,0.8);
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Work Sans"), local("WorkSans-Regular"), url("../fonts/work-sans-v3-latin-regular.woff2") format("woff2"), url("../fonts/work-sans-v3-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body, html {
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  font-size: 8rem;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.textprimary {
+  color: var(--primaryColor);
+}
+
+.textsecondary {
+  color: var(--secondaryColor);
+}
+
+.textlight {
+  color: var(--light);
+}
+
+.textdark {
+  color: var(--dark);
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.bglight {
+  background-color: var(--light);
+}
+
+.bgdark {
+  background-color: var(--dark);
+}
+
+.bgprimary {
+  background-color: var(--primaryColor);
+}
+
+.bgsecondary {
+  background-color: var(--secondaryColor);
+}
+
+.fullwidth {
+  width: 100vw;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,44 @@
+.textprimary{
+  color:var(--primaryColor);
+}
+.textsecondary{
+  color:var(--secondaryColor);
+}
+.textlight{
+  color:var(--light);
+}
+.textdark{
+	color:var(--dark);
+}
+.smallcaps{
+  font-variant: small-caps;
+}
+.textcenter{
+  text-align: center;
+}
+.bglight{
+  background-color: var(--light);
+}
+.bgdark{
+	background-color: var(--dark);
+}
+.bgprimary{
+	background-color: var(--primaryColor);
+}
+.bgsecondary{
+	background-color: var(--secondaryColor);
+}
+.fullwidth{
+  width: 100vw;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}

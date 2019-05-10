@@ -37,33 +37,58 @@
   <!-- MINIFY CSS AND CHANGE LINK -->
   <link rel="stylesheet" href="css/styles.css">
   <!-- MINIFY JS AND CHANGE LINK -->
-  <script src="js/scripts.js"></script>
+  <script src="/js/pushbar.js"></script>
   <!-- FEATHER ICONS MIN.JS LINK -->
   <script src="/js/feather.min.js"></script>
 </head>
 
 <body>
-
-  <div class="hero-area">
-    <div class="hero-logo">
-      <img src="../img/ms-logo-lines.svg" class="logo" alt="logo">
+  <div class="pushbar_main_content">
+    <div class="hero-area">
+      <div class="hero-logo">
+        <img src="../img/ms-logo-lines.svg" class="logo" alt="logo">
+      </div>
     </div>
+
+    <button data-pushbar-target="top pushbar">
+      top pushbar
+    </button>
+    <div data-pushbar-id="top pushbar" class="pushbar from_top">
+      <ul>
+        <li><a href="#" item 1>nav item</a></li>
+        <li><a href="#" item 1>nav item</a></li>
+        <li><a href="#" item 1>nav item</a></li>
+        <li><a href="#" item 1>nav item</a></li>
+      </ul>
+      <button data-pushbar-close>Close</button>
+    </div>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo repellendus quae sint illum minus, at, molestias tenetur totam consequuntur quaerat sequi ratione reprehenderit suscipit sed recusandae quas! Magnam eveniet iure omnis quo, asperiores qui suscipit voluptatem molestias beatae nisi voluptatibus. Labore sint aliquam autem odit assumenda laudantium velit quaerat?</p>
+
+    <div id="footer" class="textcenter smallcaps">
+      <p>footer content in small caps</p>
+      <p>&COPY;
+        <script src="./js/currentyear.js"></script> Mike Sonnenberg</p>
+    </div>
+
   </div>
-
-
-  <div id="footer" class="textcenter smallcaps">
-    <p>footer content in small caps</p>
-    <p>&COPY;
-      <script src="./js/currentyear.js"></script> Mike Sonnenberg</p>
-  </div>
-
-
+  <!-- end pushbar content area -->
 </body>
 
 <footer>
   <!-- FEATHER ICONS SCRIPT -->
   <script>
     feather.replace()
+  </script>
+  <script type="text/javascript" src="pushbar/pushbar.js"></script>
+  <script type="text/javascript">
+    var pushbar = new Pushbar({
+      blur: false,
+      overlay: true,
+    });
   </script>
 
 </footer>

@@ -31,7 +31,7 @@
   <!-- CHANGE/REMOVE SELF-HOSTED FONTS PRELOAD LINK -->
   <link rel="preload" as="font" type="font/woff2" href="./fonts/work-sans-v3-latin-regular.woff" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="./fonts/work-sans-v3-latin-regular.woff2" crossorigin>
-  <!-- MINIFY CSS AND CHANGE LINK (sass autocompile format in settings.json) -->
+  <!-- MINIFY CSS AND CHANGE LINK -->
   <link rel="stylesheet" href="css/styles.css">
   <!-- MINIFY JS AND CHANGE LINK -->
   <script src="js/scripts.js"></script>
@@ -40,23 +40,18 @@
 </head>
 
 <body>
-  <!-- <header>
-    <h2 class="logo">Logo</h2>
-  </header> -->
 
-
-
-  <div id="hero-area" class="hero-area">
-    <!-- <h1 class="textcenter">Hero Area</h1> -->
+  <div class="hero-area">
+    <div class="hero-logo">
+      <img src="../img/ms-logo-lines.svg" class="logo" alt="logo">
+    </div>
   </div>
 
 
   <div id="footer" class="textcenter smallcaps">
     <p>footer content in small caps</p>
     <p>&COPY;
-      <script type="text/javascript">
-        document.write(new Date().getFullYear());
-      </script> Copyright Name</p>
+      <script src="./js/currentyear.js"></script> Mike Sonnenberg</p>
   </div>
 
 

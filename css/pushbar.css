@@ -19,7 +19,7 @@ html.pushbar_locked{
 	overflow-y: auto;
 	transition:transform 0.5s ease;
 	will-change: transform;
-	background:var(--light);
+	background:var(--clr-light);
 }
 .pushbar_overlay{
 	z-index: -999;
@@ -34,7 +34,7 @@ html.pushbar_locked{
     transition:opacity 0.5s ease;
     opacity:0;
     will-change: opacity;
-	background: #3c3442;
+	background: var(--clr-dark-50);
 }
 html.pushbar_locked .pushbar_overlay{
 	opacity:0.8;
